@@ -119,7 +119,7 @@ button {
   }
   .menu-container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #ffffff;
     position: fixed;
     top: 0;
