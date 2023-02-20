@@ -141,7 +141,7 @@ button {
     right: 40px;
     border-radius: 50%;
     height: 24px;
-    width: 24%;
+    width: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #e7e9fc;
     display: flex;
@@ -183,12 +183,11 @@ button {
     color: var(--social);
   }
   .contact-item-mail {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
     font-style: normal;
-    text-transform: capitalize;
-    color: var(--social);
+    color: #434455;
   }
   .mobile-list-icon {
     display: flex;
