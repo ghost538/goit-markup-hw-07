@@ -118,17 +118,16 @@ button {
     fill: var(--main-dark-color);
   }
   .menu-container {
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
     position: fixed;
+    height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
     overflow: scroll;
-    z-index: 999;
-    padding-top: 80px;
-    padding: 40px;
     background-color: #ffffff;
+    padding: 40px;
+    padding-top: 80px;
+    z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
   }
@@ -149,7 +148,7 @@ button {
     align-items: center;
     transition: background-color var(--function);
   }
-  .mobile-menu {
+  .mobile-menu-window {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -161,7 +160,7 @@ button {
     flex-direction: column;
     row-gap: 40px;
   }
-  .mobile-menu-link {
+  .mobile-menu-item-link {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(40 / 36);
@@ -301,7 +300,7 @@ button {
   .contact-item:first-child {
     margin-right: 40px;
   }
-  .active-page::after {
+  .current::after {
     top: 47px;
   }
   .contact-item-link {
@@ -313,33 +312,15 @@ button {
   }
 }
 
-.menu-item:not(:first-child) {
-  margin-left: 40px;
-}
-
-.menu-item-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(24 / 16);
-  letter-spacing: 0.02em;
-  color: var(--main-dark-color);
-  position: relative;
-  transition: color var(--function);
-}
-
 .current::after {
   content: "";
   position: absolute;
   display: block;
-  top: 43px;
+  top: 42px;
   width: 100%;
   height: 4px;
   background: #404bbf;
   border-radius: 2px;
-}
-
-.menu-item-link:is(:focus, :hover) {
-  color: var(--hover-color);
 }
 
 .contact-item-link {
@@ -1048,7 +1029,7 @@ button {
   transform: translate(-50%, -50%) scale(0);
 }
 
-.modal-close {
+.btn-modal-close {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -1062,17 +1043,17 @@ button {
   right: 24px;
   transition: background-color var(--function);
 }
-.modal-close:is(:hover, :focus) {
+.btn-modal-close:is(:hover, :focus) {
   background-color: var(--hover-color);
 }
-.modal-close:is(:hover, :focus) .modal-close-svg {
+.btn-modal-close:is(:hover, :focus) .svg-close {
   fill: #ffffff;
 }
 
-.modal-close-svg {
-  transition: fill var(--function);
+.svg-close {
   height: 8px;
   width: 8px;
+  transition: fill var(--function);
 }
 
 .modal-form {

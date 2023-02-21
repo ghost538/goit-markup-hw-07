@@ -55,22 +55,22 @@
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <div class="mobile-menu">
+          <div class="mobile-menu-window">
             <ul class="mobile-menu-list list">
-              <li>
+              <li class="menu-item">
                 <a
                   href="./index.html"
-                  class="mobile-menu-link mobile-active-pages link"
+                  class="mobile-menu-item-link mobile-active-pages link"
                   >Studio</a
                 >
               </li>
-              <li>
-                <a href="./index.html" class="mobile-menu-link link"
+              <li class="menu-item">
+                <a href="./portfolio.html" class="mobile-menu-item-link link"
                   >Portfolio</a
                 >
               </li>
-              <li>
-                <a href="#" class="mobile-menu-link link">Contacts</a>
+              <li class="menu-item">
+                <a href="#" class="mobile-menu-item-link link">Contacts</a>
               </li>
             </ul>
             <address class="mobile-address">
@@ -156,7 +156,7 @@
         <div class="container">
           <h2 class="visually-hidden">Feature</h2>
           <ul class="section-astronaut list">
-            <li>
+            <li class="list-item">
               <a class="main-svg-link" href="">
                 <svg class="main-svg">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -168,7 +168,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="list-item">
               <a class="main-svg-link" href>
                 <svg class="main-svg">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -180,7 +180,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="list-item">
               <a class="main-svg-link" href>
                 <svg class="main-svg">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -192,7 +192,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="list-item">
               <a class="main-svg-link" href>
                 <svg class="main-svg">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -214,28 +214,28 @@
             <li>
               <img
                 class="img"
+                srcset="./images/comp@2x.jpg 2x"
                 src="./images/comp.jpg"
-                alt="monitor"
+                alt="screen"
                 width="360"
-                height="300"
               />
             </li>
             <li>
               <img
                 class="img"
+                srcset="./images/tel@2x.jpg 2x"
                 src="./images/tel.jpg"
                 alt="smartphone"
                 width="360"
-                height="300"
               />
             </li>
             <li>
               <img
                 class="img"
+                srcset="./images/note@2x.jpg 2x"
                 src="./images/note.jpg"
                 alt="laptop"
                 width="360"
-                height="300"
               />
             </li>
           </ul>
@@ -248,10 +248,10 @@
             <li class="team team-item">
               <img
                 class="img"
+                srcset="./images/imgmark@2x.jpg 2x"
                 src="./images/imgmark.jpg"
                 alt="Mark"
                 width="264"
-                height="260"
               />
               <div class="team-text">
                 <h3 class="list-title">Mark Guerrero</h3>
@@ -291,10 +291,10 @@
             <li class="team team-item">
               <img
                 class="img"
+                srcset="./images/imgtom@2x.jpg 2x"
                 src="./images/imgtom.jpg"
                 alt="Tom"
                 width="264"
-                height="260"
               />
               <div class="team-text">
                 <h3 class="list-title">Tom Ford</h3>
@@ -334,10 +334,10 @@
             <li class="team team-item">
               <img
                 class="img"
+                srcset="./images/imgcamila@2x.jpg 2x"
                 src="./images/imgcamila.jpg"
                 alt="Camila"
                 width="264"
-                height="260"
               />
               <div class="team-text">
                 <h3 class="list-title">Camila Garcia</h3>
@@ -377,10 +377,10 @@
             <li class="team team-item">
               <img
                 class="img"
+                srcset="./images/imgdaniel@2x.jpg 2x"
                 src="./images/imgdaniel.jpg"
                 alt="Daniel"
                 width="264"
-                height="260"
               />
               <div class="team-text">
                 <h3 class="list-title">Daniel Wilson</h3>
@@ -537,8 +537,8 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close" data-modal-close type="button">
-          <svg class="modal-close-svg">
+        <button class="btn-modal-close" data-modal-close type="button">
+          <svg class="svg-close">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
